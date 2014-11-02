@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
 
+
 /**
  * MstUser entity. @author MyEclipse Persistence Tools
  */
@@ -236,4 +237,23 @@ public class MstUser implements java.io.Serializable {
 		this.mstUnitUsers = mstUnitUsers;
 	}
 
+	public void copy(MstUser target) {
+
+		this.usernam = target.usernam;
+		this.password = target.password;
+		this.uim = target.uim;
+		this.mailads = target.mailads;
+		this.defaultkey = target.defaultkey;
+		this.logerrcnt = target.logerrcnt;
+		this.logintim = target.logintim;
+		this.userkub = target.userkub;
+		this.dwnlodauth = target.dwnlodauth;
+		this.userdecide = target.userdecide;
+		this.expirtndate = target.expirtndate;
+		this.delflg = target.delflg;
+		this.crttim = target.crttim;
+		this.crtusr = target.crtusr;
+		this.updtim = target.updtim;
+		this.updusr = target.updusr;
+	}
 }

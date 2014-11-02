@@ -8,6 +8,10 @@ import javax.annotation.Resource;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
+import cn.edu.ustc.clientcard.model.MstUser;
+import cn.edu.ustc.clientcard.service.LoginService;
+import cn.edu.ustc.clientcard.service.UserService;
+
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -19,7 +23,7 @@ public class LoginAction extends ActionSupport {
 	 * 
 	 */
 	private static final long serialVersionUID = -5916053796470570580L;
-/*
+
 	@Resource
 	private UserService userService;
 	@Resource
@@ -107,5 +111,5 @@ public class LoginAction extends ActionSupport {
 
 	public String getIndexPage() {
 		return SUCCESS;
-	}*/
+	}
 }
