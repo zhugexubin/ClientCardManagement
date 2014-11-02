@@ -5,7 +5,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>客户资源管理系统</title>
+		<title>客户名片管理系统</title>
 
 		<link href="resource/dwz-ria/themes/default/style.css"
 			rel="stylesheet" type="text/css" media="screen" />
@@ -81,7 +81,7 @@
 				<div class="headerNav">
 
 					<div class="title_white">
-						客户资源管理系统
+						客户名片管理系统
 					</div>
 					<ul class="nav">
 						<li>
@@ -179,13 +179,13 @@
 									<a href="card/allcardglance.jsp" target="navTab" rel="名片一览">名片一览</a>
 								</li>
 								<li>
-									<a target="navTab" rel="名片生成" href="mycard/MyCardAction">名片生成</a>
+									<a href="mycard/MyCardAction" target="navTab" rel="名片生成">名片生成</a>
 								</li>
 								<li>
-									<a target="navTab" rel="我的名片" href="card/mycardglance.jsp">我的名片</a>
+									<a href="card/mycardglance.jsp" target="navTab" rel="我的名片">我的名片</a>
 								</li>
 								<li>
-									<a href="card/GetDepartTreeAction" target="navTab" rel="公司部门视图">公司部门视图</a>
+									<a href="jump.jsp" target="navTab" rel="公司部门视图">公司部门视图</a>
 								</li>
 							</ul>
 
@@ -200,7 +200,7 @@
 							<ul class="tree treeFolder collapse">
 								<li>
 									<a target="navTab" rel="组管理"
-										href="card/GetListGroupManageAction">组管理</a>
+										href="jump.jsp">组管理</a>
 								</li>
 							</ul>
 
@@ -215,7 +215,7 @@
 							<ul class="tree treeFolder collapse">
 								<li>
 									<a target="navTab" rel="访问日志管理"
-										href="card/GetListTrnAccessAction">访问日志管理</a>
+										href="jump.jsp">访问日志管理</a>
 								</li>
 							</ul>
 
@@ -257,15 +257,7 @@
 					<div class="navTab-panel tabsPageContent layoutBox">
 
 						<div class="page unitBox">
-							<div class="accountInfo">
-								<div class="alertInfo">
-
-								</div>
-								<div class="right">
-
-								</div>
-
-							</div>
+	
 							<div class="pageFormContent duoduoMainPage" layoutH="80">
 								<div class="cardcenterdiv">
 									<div class="cardmytitle">
@@ -276,48 +268,28 @@
 											<span class="duoduoInfoImage"><img
 													src="resource/img/Repeater.gif" /> </span>
 										</div>
-										<div class="duoduoInfoRight">
-											<span class="duoduoInfoTitle">杨洋(duoduo)</span>
-											<div class="duoduoInfoContent">
-												软件10-4班,java,python,瞎捣鼓
-											</div>
-										</div>
+									 
 									</div>
 									<div class="duoduoInfo">
 										<div class="duoduoInfoLeft">
 											<span class="duoduoInfoImage"><img
 													src="resource/img/GloomShroomSleep.gif" /> </span>
 										</div>
-										<div class="duoduoInfoRight">
-											<span class="duoduoInfoTitle">诸葛绪斌</span>
-											<div class="duoduoInfoContent">
-												软件10-4班,大神(看姓就知道)
-											</div>
-										</div>
+									 
 									</div>
 									<div class="duoduoInfo">
 										<div class="duoduoInfoLeft">
 											<span class="duoduoInfoImage"><img
 													src="resource/img/Wallnut_cracked2.gif" /> </span>
 										</div>
-										<div class="duoduoInfoRight">
-											<span class="duoduoInfoTitle">索慧明</span>
-											<div class="duoduoInfoContent">
-												软件10-4班,猥琐，非常猥琐(看姓就知道)
-											</div>
-										</div>
+										 
 									</div>
 									<div class="duoduoInfo">
 										<div class="duoduoInfoLeft">
 											<span class="duoduoInfoImage"><img
 													src="resource/img/Blover.gif" /> </span>
 										</div>
-										<div class="duoduoInfoRight">
-											<span class="duoduoInfoTitle">陈磊</span>
-											<div class="duoduoInfoContent">
-												软件10-4班，算法，C++
-											</div>
-										</div>
+										 
 									</div>
 									<div class="duoduoInfo">
 										<marquee direction="right" scrollamount="8" scrolldelay="60" >
@@ -341,7 +313,7 @@
 		</div>
 
 		<div id="footer">
-			Copyright &copy; 2013
+			Copyright &copy; 2014
 		</div>
 
 

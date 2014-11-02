@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="ClientCard"
-  id="myeclipse.1414759624121"
-  context-root="/ClientCard"
+  name="ClientCardManagement"
+  id="myeclipse.1371451386609"
+  context-root="/ClientCardManagement"
   j2ee-spec="5.0"
-  archive="ClientCard.war">
+  archive="ClientCardManagement.war">
   <attributes>
     <attribute name="webrootdir" value="WebRoot" />
   </attributes>

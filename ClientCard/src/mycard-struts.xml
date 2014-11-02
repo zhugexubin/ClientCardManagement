@@ -9,6 +9,17 @@
 		<action name="MyCardAction" class="myCardManageAction" method="redirect">
 			<result name="success">/card/mycardgenerate.jsp</result>
 		</action>
+		<action name="GenerateCardAction" class="myCardManageAction" method="save">
+			<result name="success" type="json">
+			<param name="includeProperties">
+					uid,callbackType,navTabId,statusCode,pageNumShown,numPerPage,pageNum,isSearchFlag,totalCount
+			</param>
+			</result>
+		</action>
+		<action name="GetMyCardListAction" class="myCardManageAction" method="getMyList">		
+			<result name="success" >/card/mycardlist.jsp</result>
+		</action>
+		
 		<action name="FuzzyCardSearchAction" class="myCardManageAction"
 			method="search">
 		</action>
@@ -23,16 +34,45 @@
 			<result name="success">/card/cardview.jsp			
 			</result>
 		</action>
+	
+		<action name="FileUploadAction" class="fileUploadAction">
+			<interceptor-ref name="fileUploadStack" />
+			<result name="upload_done" type="json">
+				<param name="includeProperties">
+					imageFileName
+				</param>
+			</result>
+		</action>
 		
-		<action name="GenerateCardAction" class="myCardManageAction" method="save">
+		<action name="DeleteMyCardAction" class="myCardManageAction"
+			method="delete">
 			<result name="success" type="json">
 			<param name="includeProperties">
-					uid,callbackType,navTabId,statusCode,pageNumShown,numPerPage,pageNum,isSearchFlag,totalCount
+					uid
 			</param>
 			</result>
 		</action>
-		<action name="GetMyCardListAction" class="myCardManageAction" method="getMyList">		
+		
+		<action name="DeleteMyACardAction" class="myCardManageAction"
+			method="deleteA">
+			<result name="success" type="json">
+			<param name="includeProperties">
+					uid
+			</param>
+			</result>
+		</action>
+		 
+		
+		<action name="GetMyCardByIdAction" class="myCardManageAction" method="getCardById">		
 			<result name="success" >/card/mycardlist.jsp</result>
 		</action>
+		
+		<action name="MyCardManageAction" class="myCardManageAction" method="save">
+			<result name="success" type="json"></result>
+		</action>
+		
+
+
+
 	</package>
 </struts>    
